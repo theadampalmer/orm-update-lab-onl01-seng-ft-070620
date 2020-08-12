@@ -43,7 +43,7 @@ attr_accessor :id, :name, :grade
         student
     end
     
-    def self.find_by_name
+    def self.find_by_name(name)
         sql = <<-SQL
         SELECT * FROM students
         WHERE name = ?
